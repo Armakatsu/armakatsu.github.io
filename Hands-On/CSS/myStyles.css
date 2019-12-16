@@ -1,0 +1,133 @@
+body{
+
+    margin: 0px;
+    padding: 0px;
+    background-color: #f7f7f7;
+    color: #393e46;
+    font-family: "Century Gothic";
+
+}
+
+main{
+
+    margin: 5px;
+    margin-left: 55px;
+    padding: 5px;
+
+}
+
+header{
+
+  background-color: lightgray;
+  padding: 20px;
+
+}
+
+p.heading{
+
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+p.sub-heading{
+
+  font-size: 16px;
+  text-align: center;
+
+}
+
+hr{
+
+  height: 2px;
+  border: none;
+  background-color: black;
+
+}
+
+div.container{
+
+    margin: auto;
+    width: 25%;
+}
+
+/* LIST STYLE TYPE */
+#alpha{
+
+  list-style-type: lower-alpha;
+
+}
+
+#alpha #katakana{
+
+  list-style-type: katakana;
+
+}
+
+#alpha #hiragana{
+
+  list-style-type: hiragana;
+
+}
+
+#alpha #greek{
+
+  list-style-type: lower-greek;
+
+}
+
+/* LIST STYLE IMAGES */
+#custom{
+
+  list-style-image: url("../IMAGES/checkmark4.png");
+
+}
+
+/* LIST POSITION */
+#position li{
+
+  list-style-position: inside;
+  width: 50px;
+  word-wrap: break-word;
+
+}
+
+/* SHORTHAND LIST */
+#shorthand {
+
+  list-style: lower-latin inside url("../IMAGES/checkmark4.png");
+
+}
+
+/* LIST DEFAULT STYLE*/
+#default{
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+/* LIST COLOR STYLES */
+#color{
+  
+  background-color: lightgray;
+  padding: 20px;
+  margin: 10px;
+  list-style-type: none;
+  border-left: 5px solid navy;
+
+}
+
+#color li{
+
+  padding: 10px;
+
+}
+
+#color #colored{
+
+  background-color: gray;
+
+}
