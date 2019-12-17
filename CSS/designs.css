@@ -1,0 +1,163 @@
+body {
+background:#D3DCF2;
+font-family:Roboto, Arial;
+margin:0;
+padding:0;
+}
+
+header {
+font-family:Comfortaa, arial, sans-serif;
+background-color:#036DB3;
+border-top:3px solid #023150;
+border-bottom:2px solid #023150;
+padding:50px 20px;
+}
+
+header i {
+font-size:32px;
+}
+
+header p {
+display:inline;
+font-family:Comfortaa, Arial;
+font-size:48px;
+margin:0;
+padding:25px;
+}
+
+div.chapter {
+margin:10px;
+padding:10px;
+}
+
+div.chapter h3 {
+font-size:32px;
+color:#FFF;
+padding:20px;
+}
+
+div#navigation a {
+padding-left:20px;
+padding-right:20px;
+border-right:2px solid #036DB3;
+}
+
+div#navigation a:first-child {
+border-left:2px solid #036DB3;
+}
+
+a:link,a:visited {
+color:#000;
+}
+
+div.title {
+border-bottom:3px solid #036DB3;
+background-color:#4fa4da;
+border-top-right-radius:25px;
+border-top-left-radius:10px;
+}
+
+div.title p {
+font-family:'Sulphur Point', Arial;
+font-size:30px;
+font-weight:700;
+margin:0;
+padding:20px;
+}
+
+div.section {
+background-color:#d8f0ff;
+font-size:24px;
+}
+
+div.section p {
+text-align:justify;
+font-size:24px;
+margin:0;
+padding:20px;
+}
+
+div.nav {
+border-top:3px solid #036DB3;
+border-bottom-right-radius:5px;
+border-bottom-left-radius:5px;
+background-color:#92c7e8;
+}
+
+div.nav p {
+font-size:18px;
+margin:0;
+padding:10px;
+}
+
+div.column {
+float:left;
+width:30%;
+padding:20px;
+}
+
+div.image_row {
+text-align:center;
+}
+
+div.sidebar {
+flex:20%;
+margin:10px;
+}
+
+div.main {
+flex:60%;
+margin:10px;
+}
+
+ol {
+list-style-position:inside;
+padding-top:10px;
+}
+
+ol.title li {
+font-size:24px;
+font-weight:700;
+font-family:"Sulphur Point", arial, sans-serif;
+}
+
+ul {
+list-style-position:inside;
+margin:0;
+padding:20px;
+}
+
+ul li {
+padding:5px;
+}
+
+div.container {
+display:flex;
+flex-wrap:wrap;
+padding:10px;
+}
+
+img {
+width:400px;
+height:200px;
+margin:5px;
+}
+
+.image_row:after {
+content:"";
+display:table;
+clear:both;
+}
+
+#gray {
+color:#D3DCF2;
+margin-right:10px;
+padding-right:15px;
+border-right:2px solid #D3DCF2;
+}
+
+@media screen and max-width 700px {
+div.* {
+flex-direction:column;
+}
+}
