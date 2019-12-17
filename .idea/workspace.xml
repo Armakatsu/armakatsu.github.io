@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ece28f5b-cf2f-4c89-afd4-300c91bf5439" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/myStyles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hands-On/HTML/34_VIZCOCHO_BIOGRAPHY_EDITED_ITAD.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hands-On/HTML/34_VIZCOCHO_BIOGRAPHY_ITAD.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hands-On/HTML/34_VIZCOCHO_HTMLSTYLES_ITAD.HTML" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hands-On/HTML/34_VIZCOCHO_LISTS_ITAD.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hands-On/HTML/34_VIZCOCHO_QUOTES_ITAD.HTML" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hands-On/HTML/34_VIZCOCHO_bulletQUIZ_ITAD.HTML" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hands-On/HTML/34_VIZCOCHO_csslist_ITAD.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hands-On/IMAGES/checkmark4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/biography.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/biography.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/resume.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/resume.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +19,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
-              <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+              <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -43,8 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HTML/biography.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-end-line="8" />
+            <state relative-caret-position="3542">
+              <caret line="154" column="47" selection-start-line="154" selection-start-column="47" selection-end-line="154" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -53,7 +46,7 @@
         <entry file="file://$PROJECT_DIR$/HTML/resume.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="138">
-              <caret line="6" column="63" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
+              <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -72,12 +65,14 @@
       <find>elementary1.jpg</find>
       <find>college3.jpg</find>
       <find>text</find>
+      <find>images</find>
     </findStrings>
     <replaceStrings>
       <replace>../images/elementary1.jpg</replace>
       <replace>../images/highschool1.jpg</replace>
       <replace>../images/college2.jpg</replace>
       <replace>../images/college3.jpg</replace>
+      <replace>IMAGES</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -92,6 +87,7 @@
         <option value="$PROJECT_DIR$/HTML/34_VIZCOCHO_RESUME_ITAD.html" />
         <option value="$PROJECT_DIR$/HTML/34_VIZCOCHO_BIOGRAPHY_ITAD.html" />
         <option value="$PROJECT_DIR$/HTML/biography.html" />
+        <option value="$PROJECT_DIR$/HTML/resume.html" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -118,11 +114,6 @@
               <item name="armakatsu.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="armakatsu.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="CSS" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="armakatsu.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="armakatsu.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="HTML" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="armakatsu.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -205,13 +196,6 @@
     <entry file="file://$PROJECT_DIR$/HTML/34_VIZCOCHO_BIOGRAPHY_ITAD.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTML/resume.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="63" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CSS/designs.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3726">
@@ -221,15 +205,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML/biography.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-end-line="8" />
+        <state relative-caret-position="3542">
+          <caret line="154" column="47" selection-start-line="154" selection-start-column="47" selection-end-line="154" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML/resume.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
-          <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+          <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
         </state>
       </provider>
     </entry>
