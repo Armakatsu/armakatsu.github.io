@@ -159,10 +159,15 @@ clear:both;
   display: block;
   border-bottom: 3px solid #036DB3;
   border-radius: 10px 5px;
+  font-size: 20px;
 }
 
-.links a:hover, a:active {
+.links a:hover, a:active{
   background-color: #036DB3;
+}
+
+header a {
+    text-decoration: none;
 }
 
 #gray {
