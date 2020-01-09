@@ -149,6 +149,22 @@ display:table;
 clear:both;
 }
 
+.links a:link, a:visited {
+  background-color: #4fa4da;
+  width: 100%;
+  padding: 24px 35px;
+  margin: 20px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  border-bottom: 3px solid #036DB3;
+  border-radius: 10px 5px;
+}
+
+.links a:hover, a:active {
+  background-color: #036DB3;
+}
+
 #gray {
 color:#D3DCF2;
 margin-right:10px;
