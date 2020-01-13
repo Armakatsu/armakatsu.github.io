@@ -3,6 +3,7 @@ background:#D3DCF2;
 font-family:Roboto, Arial;
 margin:0;
 padding:0;
+box-sizing : border-box
 }
 
 header {
@@ -140,7 +141,6 @@ padding:10px;
 img {
 width:400px;
 height:200px;
-margin:5px;
 }
 
 .image_row:after {
@@ -149,7 +149,7 @@ display:table;
 clear:both;
 }
 
-.links a:link, a:visited {
+div.links a:link, div.links a:visited{
   background-color: #4fa4da;
   width: 100%;
   padding: 24px 35px;
@@ -162,7 +162,7 @@ clear:both;
   font-size: 20px;
 }
 
-.links a:hover, a:active{
+div.links a:hover,div.links a:active{
   background-color: #036DB3;
 }
 
@@ -170,15 +170,65 @@ header a {
     text-decoration: none;
 }
 
-#gray {
-color:#D3DCF2;
-margin-right:10px;
-padding-right:15px;
-border-right:2px solid #D3DCF2;
+div.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+    background-color: #d8f0ff;
+
 }
+
+div.image a{
+
+}
+
+div.gallery div.image{
+    flex: 60%;
+    height: 640px;
+}
+
+div.image img {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+
+}
+
+div.gallery div.info{
+    align-self: center;
+    text-align: center;
+    flex: 38%;
+    margin: 0px 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+
+}
+
+div.name{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Sulphur Point', arial;
+    padding: 5px 20px;
+}
+
+div.location{
+    font-size: 32px;
+    font-family: 'Sulphur Point', arial;
+    padding: 5px 20px;
+}
+
+div.reason{
+    font-size: 16px;
+    font-family: Roboto, arial;
+    padding: 5px 20px;
+}
+
+
 
 @media screen and max-width 700px {
 div.* {
 flex-direction:column;
 }
 }
+
