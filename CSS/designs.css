@@ -1,9 +1,9 @@
 body {
 background:#D3DCF2;
 font-family:Roboto, Arial;
+box-sizing:border-box;
 margin:0;
 padding:0;
-box-sizing : border-box
 }
 
 header {
@@ -138,142 +138,104 @@ flex-wrap:wrap;
 padding:10px;
 }
 
-
-
 .image_row:after {
 content:"";
 display:table;
 clear:both;
 }
 
-div.links a:link, div.links a:visited{
-  background-color: #4fa4da;
-  width: 100%;
-  padding: 24px 35px;
-  margin: 20px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  border-bottom: 3px solid #036DB3;
-  border-radius: 10px 5px;
-  font-size: 20px;
+div.links a:link,div.links a:visited {
+background-color:#4fa4da;
+width:100%;
+text-align:center;
+text-decoration:none;
+display:block;
+border-bottom:3px solid #036DB3;
+border-radius:10px 5px;
+font-size:20px;
+margin:20px;
+padding:24px 35px;
 }
 
-div.links a:hover,div.links a:active{
-  background-color: #036DB3;
+div.links a:hover,div.links a:active {
+background-color:#036DB3;
 }
 
 a {
-    text-decoration: none;
+text-decoration:none;
 }
 
-div.gallery{
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px;
-  background-color: #d8f0ff;
-
+div.gallery {
+display:flex;
+flex-wrap:wrap;
+background-color:#d8f0ff;
+margin:10px;
 }
 
-div.gallery div.image{
-    flex: 60%;
-    height: 640px;
+div.gallery div.image {
+flex:60%;
+height:640px;
 }
 
 div.image img {
-  margin: 0px;
-  width: 100%;
-  height: 100%;
-
+width:100%;
+height:100%;
+margin:0;
 }
 
-div.gallery div.info{
-    align-self: center;
-    text-align: center;
-    flex: 38%;
-    margin: 0px 10px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-
-
+div.gallery div.info {
+align-self:center;
+text-align:center;
+flex:38%;
+padding-top:50px;
+padding-bottom:50px;
+margin:0 10px;
 }
 
-div.gallery div.name{
-    font-size: 50px;
-    font-weight: 700;
-    font-family: 'Sulphur Point', arial;
-    padding: 5px 20px;
+div.gallery div.name {
+font-size:50px;
+font-weight:700;
+font-family:'Sulphur Point', arial;
+padding:5px 20px;
 }
 
-div.gallery div.location{
-    font-size: 32px;
-    font-family: 'Sulphur Point', arial;
-    padding: 5px 20px;
+div.gallery div.location {
+font-size:32px;
+font-family:'Sulphur Point', arial;
+padding:5px 20px;
 }
 
-div.gallery div.reason{
-    font-size: 16px;
-    font-family: Roboto, arial;
-    padding: 5px 20px;
+div.gallery div.reason {
+font-size:16px;
+font-family:Roboto, arial;
+padding:5px 20px;
 }
 
-
-
-div.albums, div.artworks, div.books, div.games, div.movies{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background: #d8f0ff;
-    padding: 50px 10px;
-
+div.albums,div.artworks,div.books,div.games,div.movies {
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+background:#d8f0ff;
+padding:50px 10px;
 }
 
-div.albums img{
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-    border-bottom: 2px solid #036DB3;
-
+div.albums img {
+width:300px;
+height:300px;
+border-bottom:2px solid #036DB3;
+margin:10px;
 }
 
-div.artworks img{
-
-    width: 400px;
-    height: 300px;
-    margin: 10px;
-    border-bottom: 2px solid #036DB3;
-
+div.artworks img {
+width:400px;
+height:300px;
+border-bottom:2px solid #036DB3;
+margin:10px;
 }
 
-div.books img{
-    width: 300px;
-    height: 450px;
-    margin: 10px;
-    border-bottom: 2px solid #036DB3;
-
+div.books img,div.games img,div.movies img {
+width:300px;
+height:450px;
+border-bottom:2px solid #036DB3;
+margin:10px;
 }
-
-div.games img{
-    width: 300px;
-    height: 450px;
-    margin: 10px;
-    border-bottom: 2px solid #036DB3;
-
-}
-
-div.movies img{
-    width: 300px;
-    height: 450px;
-    margin: 10px;
-    border-bottom: 2px solid #036DB3;
-
-}
-
-
-
-@media screen and max-width 700px {
-div.* {
-flex-direction:column;
-}
-}
-
