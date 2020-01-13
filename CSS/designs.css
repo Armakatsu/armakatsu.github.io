@@ -138,10 +138,7 @@ flex-wrap:wrap;
 padding:10px;
 }
 
-img {
-width:400px;
-height:200px;
-}
+
 
 .image_row:after {
 content:"";
@@ -166,7 +163,7 @@ div.links a:hover,div.links a:active{
   background-color: #036DB3;
 }
 
-header a {
+a {
     text-decoration: none;
 }
 
@@ -174,11 +171,7 @@ div.gallery{
   display: flex;
   flex-wrap: wrap;
   margin: 10px;
-    background-color: #d8f0ff;
-
-}
-
-div.image a{
+  background-color: #d8f0ff;
 
 }
 
@@ -205,23 +198,75 @@ div.gallery div.info{
 
 }
 
-div.name{
+div.gallery div.name{
     font-size: 50px;
     font-weight: 700;
     font-family: 'Sulphur Point', arial;
     padding: 5px 20px;
 }
 
-div.location{
+div.gallery div.location{
     font-size: 32px;
     font-family: 'Sulphur Point', arial;
     padding: 5px 20px;
 }
 
-div.reason{
+div.gallery div.reason{
     font-size: 16px;
     font-family: Roboto, arial;
     padding: 5px 20px;
+}
+
+
+
+div.albums, div.artworks, div.books, div.games, div.movies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #d8f0ff;
+    padding: 50px 10px;
+
+}
+
+div.albums img{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border-bottom: 2px solid #036DB3;
+
+}
+
+div.artworks img{
+
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+    border-bottom: 2px solid #036DB3;
+
+}
+
+div.books img{
+    width: 300px;
+    height: 450px;
+    margin: 10px;
+    border-bottom: 2px solid #036DB3;
+
+}
+
+div.games img{
+    width: 300px;
+    height: 450px;
+    margin: 10px;
+    border-bottom: 2px solid #036DB3;
+
+}
+
+div.movies img{
+    width: 300px;
+    height: 450px;
+    margin: 10px;
+    border-bottom: 2px solid #036DB3;
+
 }
 
 
