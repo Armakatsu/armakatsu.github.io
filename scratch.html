@@ -6,6 +6,7 @@
     <title>Welcome to my website</title>
 
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto|Sulphur+Point&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" type="images/x-icon" href="IMAGES/logo.ico" />
 
     <!--<link rel="stylesheet" type="text/css" href="C:\Users\Gerard Dominic\Documents\GitHub\armakatsu.github.io\CSS\designs.css" />-->
 
@@ -71,8 +72,8 @@
 
         .links{
 
-            flex: 12%;
-            background: #036DB3;
+            flex: 10%;
+            background: #4fa4da;
             padding: 10px;
             border-right: 5px solid #036DB3;
 
@@ -81,7 +82,8 @@
         .main{
 
             flex: 80%;
-            background-color: #3FF3FF;
+            background-color: #d3dcf2;
+            border-left: 2px solid black;
 
         }
 
@@ -92,41 +94,44 @@
 
         }
 
-        div.links a:link,div.links a:visited {
-            background-color:#d3dcf2;
+        
+
+        div.links a.major-link:link,div.links a.major-link:visited {
+
+            background-color:#036DB3;
             text-align:center;
             text-decoration:none;
             display: block;
-            border: 1px solid #036DB3;
-            border-bottom:3px solid #036DB3;
+            border: 1px solid #000 ;
+            border-bottom:3px solid #000;
             border-radius:10px 5px;
             font-size:20px;
             margin:20px;
             padding:24px 35px;
-            color: #000;
+            color: #D3DCF2;
+
         }
 
-        div.links a:hover,div.links a:active {
+        div.links a.major-link:hover,div.links a.major-link:active {
+
             background-color:#036DB3;
-        }
-
-        iframe{
-            height: 100%;
-            width: 100%;
 
         }
 
         .logo{
+
             background-color: #d3dcf2;
             text-align: center;
             margin: 30px auto;
-            border: 2px solid #036DB3;
+            border: 2px solid #000;
             border-radius: 50%;
             width: 200px;
+
         }
 
 
         .logo img{
+
             margin: 20px auto;
             width: auto;
             height: 150px;
@@ -142,50 +147,66 @@
 
     <div class="container">
         <div class="links">
+
+          <a href="scratch.html">
             <div class="logo">
-                <img src="C:\Users\Gerard Dominic\Documents\logo.png" alt="">
+                <img src="IMAGES/logo.png" alt="">
             </div>
-            <a href="#" onclick="clickLink('biography.html', this)">Biography</a>
-            <a href="#" onclick="clickLink('future.html', this)">My Future</a>
-            <a href="#" onclick="clickLink('resume.html', this)">Resume</a>
-            <a href="#" onclick="clickLink('bucketlist.html', this)">My Bucket List</a>
-            <a href="#" onclick="clickLink('gallery.html', this)">Photo Gallery</a>
-            <a href="#" onclick="clickLink('interests.html', this)">My Interests</a>
-            <a href="#" onclick="clickLink('places.html', this)">Places to Visit</a>
+          </a>
+
+            <a class="major-link" href="#" onclick="clickLink('biography.html', 'My Autobiograpy', this)">My Autobiography</a>
+            <a class="major-link" href="#" onclick="clickLink('future.html', 'My Future', this)">My Future</a>
+            <a class="major-link" href="#" onclick="clickLink('resume.html', 'My Resume', this)">My Resume</a>
+            <a class="major-link" href="#" onclick="clickLink('bucketlist.html', 'My Bucket List', this)">My Bucket List</a>
+            <a class="major-link" href="#" onclick="clickLink('gallery.html', 'My Photo Gallery', this)">My Photo Gallery</a>
+            <a class="major-link" href="#" onclick="clickLink('interests.html', 'My Interests', this)">My Interests</a>
+            <a class="major-link" href="#" onclick="clickLink('places.html', 'My Places to Visit', this)">My Places to Visit</a>
 
         </div>
 
-        <div class="main" >
+        <div class="main">
+          <object type="text/html" data=HTML/startpage.html>
 
+          </object>
         </div>
     </div>
     <script>
 
         function loadPage(filename){
 
-            document.getElementsByClassName("main")[0].innerHTML='<object type="text/html" data=HTML/'+filename+' ></object>';
-
+            document.getElementsByClassName("main")[0].innerHTML='';
+            document.getElementsByClassName("main")[0].innerHTML='<object type="text/html" data=HTML/' + filename + ' ></object>';
         }
 
-        function clickLink(url, element){
+        function clickLink(url, title, element){
             loadPage(url);
-            setActive(element);
+            setActive(title, element);
 
         }
 
-        function setActive(element){
+        function setActive(title, element){
             resetColor();
-            element.style.backgroundColor = '#d8f0ff';
+            element.style.backgroundColor = '#D3DCF2';
+            element.style.color = '#036DB3';
+            document.title = title;
+        }
+
+        function clickImage(url, title  ){
+          resetColor();
+          loadPage(url);
+          document.querySelectorAll("div.logo")[0].style.backgroundColor = "#D3DCF2";
 
         }
 
         function resetColor(){
 
-            var buttons = document.querySelectorAll("div.links a");
+            var buttons = document.querySelectorAll("div.links a.major-link");
 
             for(var i = 0; i < buttons.length; i++){
 
-                buttons[i].style.backgroundColor = "#d3dcf2";
+                buttons[i].style.backgroundColor = "#036DB3";
+                buttons[i].style.color = '#D3DCF2';
+                document.querySelectorAll("div.logo")[0].style.backgroundColor = "#036DB3";
 
 
             }
