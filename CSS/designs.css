@@ -9,9 +9,8 @@ padding:0;
 header {
 font-family:Comfortaa, arial, sans-serif;
 background-color:#036DB3;
-border-top:3px solid #023150;
-border-bottom:2px solid #023150;
-padding:50px 20px;
+padding:25px 20px;
+border-bottom: 2px solid #4fa4da;
 }
 
 header i {
@@ -128,8 +127,16 @@ margin:0;
 padding:20px;
 }
 
+ul.bucket-list li{
+
+    list-style-image: url('../IMAGES/bullet.png');
+
+}
+
 ul li {
+
 padding:5px;
+
 }
 
 div.container {
