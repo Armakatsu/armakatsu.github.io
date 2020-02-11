@@ -5,31 +5,105 @@
 
     <title>Welcome to my website</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto|Sulphur+Point&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="CSS/designs.css" />
+    <link rel="shortcut icon" type="images/x-icon" href="IMAGES/logo.ico" />
+    <link rel="stylesheet" type="text/css" href="CSS\designs.css" />
+
+    <style>
+
+        div.main{
+
+            flex: 80%;
+            background-color: #d3dcf2;
+            border-left: 2px solid black;
+            margin: 0px;
+
+        }
+
+        .main object{
+
+            height: 100%;
+            width: 100%;
+
+        }
+
+
+    </style>
+
 
 </head>
 
 <body>
-    
-    <header>
-        <p>Gerard Vizcocho | <i>Home Page</i></p>
-    </header>
 
-
-    <div class="container">
+    <div class="wrapper">
         <div class="links">
 
-            <a href="HTML/biography.html">Biography</a>
-            <a href="HTML/future.html">My Future</a>
-            <a href="HTML/resume.html">Resume</a>
-            <a href="HTML/bucketlist.html">My Bucket List</a>
-            <a href="HTML/gallery.html">Photo Gallery</a>
-            <a href="HTML/interests.html">My Interests</a>
-            <a href="HTML/places.html">Places to Visit</a>
+          <a href="scratch.html">
+            <div class="logo">
+                <img src="IMAGES/logo.png" alt="">
+            </div>
+          </a>
+
+            <a class="major-link" href="#" onclick="clickLink('biography.html', 'My Autobiograpy', this)">My Autobiography</a>
+            <a class="major-link" href="#" onclick="clickLink('future.html', 'My Future', this)">My Future</a>
+            <a class="major-link" href="#" onclick="clickLink('resume.html', 'My Resume', this)">My Resume</a>
+            <a class="major-link" href="#" onclick="clickLink('bucketlist.html', 'My Bucket List', this)">My Bucket List</a>
+            <a class="major-link" href="#" onclick="clickLink('gallery.html', 'My Photo Gallery', this)">My Photo Gallery</a>
+            <a class="major-link" href="#" onclick="clickLink('interests.html', 'My Interests', this)">My Interests</a>
+            <a class="major-link" href="#" onclick="clickLink('places.html', 'My Places to Visit', this)">My Places to Visit</a>
 
         </div>
+
+        <div class="main">
+          <object type="text/html" data=HTML/startpage.html>
+
+          </object>
+        </div>
     </div>
+    <script>
+
+        function loadPage(filename){
+
+            document.getElementsByClassName("main")[0].innerHTML='';
+            document.getElementsByClassName("main")[0].innerHTML='<object type="text/html" data=HTML/' + filename + ' ></object>';
+        }
+
+        function clickLink(url, title, element){
+            loadPage(url);
+            setActive(title, element);
+
+        }
+
+        function setActive(title, element){
+            resetColor();
+            element.style.backgroundColor = '#D3DCF2';
+            element.style.color = '#036DB3';
+            document.title = title;
+        }
+
+        function clickImage(url, title  ){
+          resetColor();
+          loadPage(url);
+          document.querySelectorAll("div.logo")[0].style.backgroundColor = "#D3DCF2";
+
+        }
+
+        function resetColor(){
+
+            var buttons = document.querySelectorAll("div.links a.major-link");
+
+            for(var i = 0; i < buttons.length; i++){
+
+                buttons[i].style.backgroundColor = "#036DB3";
+                buttons[i].style.color = '#D3DCF2';
+                document.querySelectorAll("div.logo")[0].style.backgroundColor = "#036DB3";
+
+
+            }
+
+        }
+
+    </script>
+
 
 </body>
 </html>
