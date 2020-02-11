@@ -1,257 +1,324 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa|Roboto|Sulphur+Point&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Comfortaa|Roboto|Sulphur+Point&display=swap);
 
-body {
-background:#D3DCF2;
-font-family:Roboto, Arial;
-box-sizing:border-box;
-margin:0;
-padding:0;
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,
+ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,var,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body,header,ul {
+    border: 0;
+    font: inherit;
+    vertical-align: baseline
 }
 
 header {
-font-family:Comfortaa, arial, sans-serif;
-background-color:#036DB3;
-padding:25px 20px;
-border-bottom: 4px solid #4fa4da;
+    margin: 0;
+    font-family: Comfortaa,arial,sans-serif;
+    background-color: #036db3;
+    padding: 25px 20px;
+    border-bottom: 4px solid #4fa4da
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block
+}
+
+body {
+    line-height: 1;
+    background: #d3dcf2;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+blockquote,q {
+    quotes: none
+}
+
+blockquote:after,blockquote:before,q:after,q:before {
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
 }
 
 header i {
-font-size:32px;
+    font-size: 32px
 }
 
 header p {
-display:inline;
-font-family:Comfortaa, Arial;
-font-size:48px;
-margin:0;
-padding:25px;
+    display: inline;
+    font-family: Comfortaa,Arial;
+    font-size: 48px;
+    margin: 0;
+    padding: 25px
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #3ff333;
+    height: 100%;
+    padding: 0
+}
+
+.links {
+    flex: 10%;
+    background: #4fa4da;
+    padding: 10px;
+    border-right: 5px solid #036db3
 }
 
 div.chapter {
-margin:10px;
-padding:10px;
+    margin: 10px;
+    padding: 10px
 }
 
 div.chapter h3 {
-font-size:32px;
-color:#FFF;
-padding:20px;
+    font-size: 32px;
+    color: #fff;
+    padding: 20px
+}
+
+div.content {
+    margin: 10px
 }
 
 div#navigation a {
-padding-left:20px;
-padding-right:20px;
-border-right:2px solid #036DB3;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 2px solid #036db3
 }
 
 div#navigation a:first-child {
-border-left:2px solid #036DB3;
+    border-left: 2px solid #036db3
 }
 
 a:link,a:visited {
-color:#000;
+    color: #000
 }
 
 div.title {
-border-bottom:3px solid #036DB3;
-background-color:#4fa4da;
-border-top-right-radius:25px;
-border-top-left-radius:10px;
+    border-bottom: 3px solid #036db3;
+    background-color: #4fa4da;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 10px
 }
 
 div.title p {
-font-family:'Sulphur Point', Arial;
-font-size:30px;
-font-weight:700;
-margin:0;
-padding:20px;
+    font-family: 'Sulphur Point',Arial;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    padding: 20px
 }
 
 div.section {
-background-color:#d8f0ff;
-font-size:24px;
+    background-color: #d8f0ff;
+    font-size: 24px
 }
 
 div.section p {
-text-align:justify;
-font-size:24px;
-margin:0;
-padding:20px;
+    text-align: justify;
+    font-size: 24px;
+    margin: 0;
+    padding: 20px
 }
 
 div.nav {
-border-top:3px solid #036DB3;
-border-bottom-right-radius:5px;
-border-bottom-left-radius:5px;
-background-color:#92c7e8;
+    border-top: 3px solid #036db3;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #92c7e8
 }
 
 div.nav p {
-font-size:18px;
-margin:0;
-padding:10px;
+    font-size: 18px;
+    margin: 0;
+    padding: 10px
 }
 
 div.column {
-float:left;
-width:30%;
-padding:20px;
+    float: left;
+    width: 30%;
+    padding: 20px
 }
 
-div.image_row {
-text-align:center;
+.logo,div.image_row {
+    text-align: center
 }
 
-div.sidebar {
-flex:20%;
-margin:10px;
+div.main,div.sidebar {
+    flex: 20%;
+    margin: 10px
 }
 
 div.main {
-flex:60%;
-margin:10px;
+    flex: 60%
+}
+
+ol,ul {
+    list-style-position: inside
 }
 
 ol {
-list-style-position:inside;
-padding-top:10px;
+    padding-top: 10px
 }
 
 ol.title li {
-font-size:24px;
-font-weight:700;
-font-family:"Sulphur Point", arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Sulphur Point",arial,sans-serif;
+    padding-left: 20px
 }
 
 ul {
-list-style-position:inside;
-margin:0;
-padding:20px;
+    margin: 0;
+    padding: 20px
 }
 
-ul.bucket-list li{
-
-    list-style-image: url('../IMAGES/bullet.png');
-
+ul.bucket-list li {
+    list-style-image: url(../IMAGES/bullet.png)
 }
 
 ul li {
+    padding: 5px
+}
 
-padding:5px;
-
+div.container,div.gallery {
+    display: flex;
+    flex-wrap: wrap
 }
 
 div.container {
-display:flex;
-flex-wrap:wrap;
-padding:10px;
+    padding: 10px
 }
 
 .image_row:after {
-content:"";
-display:table;
-clear:both;
+    content: "";
+    display: table;
+    clear: both
 }
 
-div.links a:link,div.links a:visited {
-background-color:#4fa4da;
-width:100%;
-text-align:center;
-text-decoration:none;
-display:block;
-border-bottom:3px solid #036DB3;
-border-radius:10px 5px;
-font-size:20px;
-margin:20px;
-padding:24px 35px;
+div.links a.major-link:link,div.links a.major-link:visited {
+    background-color: #036db3;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    border: 1px solid #000;
+    border-bottom: 3px solid #000;
+    border-radius: 10px 5px;
+    font-size: 20px;
+    margin: 20px;
+    padding: 24px 35px;
+    color: #d3dcf2
 }
 
-div.links a:hover,div.links a:active {
-background-color:#036DB3;
+div.links a.major-link:active,div.links a.major-link:hover {
+    background-color: #036db3
 }
 
 a {
-text-decoration:none;
+    text-decoration: none
 }
 
 div.gallery {
-display:flex;
-flex-wrap:wrap;
-background-color:#d8f0ff;
-margin:10px;
+    background-color: #d8f0ff;
+    margin: 10px
 }
 
 div.gallery div.image {
-flex:60%;
-height:640px;
+    flex: 60%;
+    height: 640px
 }
 
 div.image img {
-width:100%;
-height:100%;
-margin:0;
+    width: 100%;
+    height: 100%;
+    margin: 0
 }
 
 div.gallery div.info {
-align-self:center;
-text-align:center;
-flex:38%;
-padding-top:50px;
-padding-bottom:50px;
-margin:0 10px;
+    align-self: center;
+    text-align: center;
+    flex: 38%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 10px
+}
+
+div.gallery div.location,div.gallery div.name {
+    font-family: 'Sulphur Point',arial;
+    padding: 5px 20px
 }
 
 div.gallery div.name {
-font-size:50px;
-font-weight:700;
-font-family:'Sulphur Point', arial;
-padding:5px 20px;
+    font-size: 50px;
+    font-weight: 700
 }
 
 div.gallery div.location {
-font-size:32px;
-font-family:'Sulphur Point', arial;
-padding:5px 20px;
+    font-size: 32px
 }
 
 div.gallery div.reason {
-font-size:16px;
-font-family:Roboto, arial;
-padding:5px 20px;
+    font-size: 16px;
+    font-family: Roboto,arial;
+    padding: 5px 20px
 }
 
 div.albums,div.artworks,div.books,div.games,div.movies {
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-background:#d8f0ff;
-padding:50px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #d8f0ff;
+    padding: 50px 10px
 }
 
 div.albums img {
-width:300px;
-height:300px;
-border-bottom:2px solid #036DB3;
-margin:10px;
+    width: 300px;
+    height: 300px;
+    border-bottom: 2px solid #036db3;
+    margin: 10px
 }
 
-div.artworks img {
-width:400px;
-height:300px;
-border-bottom:2px solid #036DB3;
-margin:10px;
+div.artworks img,div.books img,div.games img,div.movies img {
+    width: 400px;
+    height: 300px;
+    border-bottom: 2px solid #036db3;
+    margin: 10px
+}
+
+body,html {
+    height: 100%;
+    font-family: Roboto,Arial
 }
 
 div.books img,div.games img,div.movies img {
-width:300px;
-height:450px;
-border-bottom:2px solid #036DB3;
-margin:10px;
+    width: 300px;
+    height: 450px
 }
 
-#worldmap{
+.logo {
+    background-color: #d3dcf2;
+    margin: 30px auto;
+    border: 2px solid #000;
+    border-radius: 50%;
+    width: 200px
+}
 
-    margin: 50px;
+.logo img {
+    margin: 20px auto;
+    width: auto;
+    height: 150px
+}
 
-
+#worldmap {
+    margin: 50px
 }
