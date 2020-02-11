@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Roboto|Sulphur+Point&display=swap');
+
 body {
 background:#D3DCF2;
 font-family:Roboto, Arial;
@@ -10,7 +12,7 @@ header {
 font-family:Comfortaa, arial, sans-serif;
 background-color:#036DB3;
 padding:25px 20px;
-border-bottom: 2px solid #4fa4da;
+border-bottom: 4px solid #4fa4da;
 }
 
 header i {
