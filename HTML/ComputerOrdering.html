@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Computer Ordering Form</title>
+
+    <style media="screen">
+      body{
+        font-size: 20px;
+      }
+      fieldset{
+        width: 50%;
+        margin: 50px auto 10px;
+      }
+
+      table{
+        padding: 10px;
+        margin: auto;
+
+      }
+
+      td{
+        padding: 10px;
+        margin: 10px auto;
+      }
+
+      input[type="text"]{
+        width: 100%;
+      }
+
+      input[name="count"]{
+        width: 30%;
+      }
+
+      img{
+        width: 50%;
+        margin-bottom: 10px;
+      }
+
+      .card{
+        border: 1px solid gray;
+        padding: 10px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <form action="index.html" method="POST">
+      <fieldset>
+        <legend>PERSONAL INFORMATION</legend>
+
+        <table>
+          <tr>
+            <td><label for="name">Full Name:</label></td>
+            <td><input type="text" name="name" id="name" placeholder="Juan Dela Cruz"></td>
+            <td><label for="address">Address:</label></td>
+            <td><input type="text" name="address" id="address" placeholder="Philippines"></td>
+          </tr>
+
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td colspan="3"><input type="text" name="email" id="email" placeholder="JuanDelaCruz@yahoo.com"></td>
+          </tr>
+
+
+        </table>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>ORDER INFORMATION</legend>
+
+        <table>
+          <tr>
+            <th colspan="3">Memory Modules</th>
+          </tr>
+          <tr>
+            <td>
+              <div class="card">
+                <center>
+                  <img src="Html/ram.jpg" alt="">
+                  <div class="card-body">
+                    <input type="checkbox" name="ram" id="ram1" value="ram1">
+                    <label for="ram1">Ram 1 | </label>
+                    <label for="count1">Qty:</label>
+                    <input type="text" name="count" id="count1" value="">
+                  </div>
+                </center>
+              </div>
+            </td>
+            <td>
+              <div class="card">
+                <center>
+                  <img src="Html/ram.jpg" alt="">
+                  <div class="card-body">
+                    <input type="checkbox" name="ram" id="ram2" value="ram2">
+                    <label for="ram2">Ram 2 | </label>
+                    <label for="count2">Qty:</label>
+                    <input type="text" name="count" id="count2" value="">
+                  </div>
+                </center>
+              </div>
+            </td>
+            <td>
+              <div class="card">
+                <center>
+                  <img src="Html/ram.jpg" alt="">
+                  <div class="card-body">
+                    <input type="checkbox" name="ram" id="ram3" value="ram3">
+                    <label for="ram3">Ram 3 | </label>
+                    <label for="count3">Qty:</label>
+                    <input type="text" name="count" id="count3" value="">
+                  </div>
+                </center>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th colspan="3">Video Cards</th>
+          </tr>
+          <tr>
+            <td>
+              <div class="card">
+                <center>
+                  <img src="Html/vc.jpg" alt="">
+                  <div class="card-body">
+                    <input type="checkbox" name="vc" id="vc1" value="vc1">
+                    <label for="vc1">Video Card  1 | </label>
+                    <label for="count4">Qty:</label>
+                    <input type="text" name="count" id="count4" value="">
+                  </div>
+                </center>
+              </div>
+            </td>
+            <td>
+              <div class="card">
+                <center>
+                  <img src="Html/vc.jpg" alt="">
+                  <div class="card-body">
+                    <input type="checkbox" name="ram" id="vc2" value="vc2">
+                    <label for="vc2">Video Card 2 | </label>
+                    <label for="count5">Qty:</label>
+                    <input type="text" name="count" id="count5" value="">
+                  </div>
+                </center>
+              </div>
+            </td>
+            <td>
+              <div class="card">
+                <center>
+                  <img src="Html/vc.jpg" alt="">
+                  <div class="card-body">
+                    <input type="checkbox" name="ram" id="vc3" value="vc3">
+                    <label for="vc3">Video Card 3 | </label>
+                    <label for="count6">Qty:</label>
+                    <input type="text" name="count" id="count6" value="">
+                  </div>
+                </center>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th colspan="3">Hard Disks</th>
+          </tr>
+          <tr>
+            <td>
+              <div class="card">
+                <center>
+                  <img src="Html/hdd.jpg" alt="">
+                  <div class="card-body">
+                    <input type="checkbox" name="hdd" id="hdd1" value="hdd1">
+                    <label for="hdd1">Hard Disk 1 | </label>
+                    <label for="count7">Qty:</label>
+                    <input type="text" name="count" id="count7" value="">
+                  </div>
+                </center>
+              </div>
+            </td>
+            <td>
+              <div class="card">
+                <center>
+                  <img src="Html/hdd.jpg" alt="">
+                  <div class="card-body">
+                    <input type="checkbox" name="hdd" id="hdd2" value="hdd2">
+                    <label for="hdd2">Hard Disk 2 | </label>
+                    <label for="count8">Qty:</label>
+                    <input type="text" name="count" id="count8" value="">
+                  </div>
+                </center>
+              </div>
+            </td>
+            <td>
+              <div class="card">
+                <center>
+                  <img src="Html/hdd.jpg" alt="">
+                  <div class="card-body">
+                    <input type="checkbox" name="hdd" id="hdd3" value="hdd3">
+                    <label for="hdd3">Hard Disk 3 | </label>
+                    <label for="count9">Qty:</label>
+                    <input type="text" name="count" id="count9" value="">
+                  </div>
+                </center>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th colspan="3">Motherboards</th>
+          </tr>
+          <tr>
+            <td>
+              <div class="card">
+                <center>
+                  <img src="Html/mobo.jpg" alt="">
+                  <div class="card-body">
+                    <input type="checkbox" name="mobo" id="mobo1" value="mobo1">
+                    <label for="mobo1">Motherboard 1 | </label>
+                    <label for="count11">Qty:</label>
+                    <input type="text" name="count" id="count11" value="">
+                  </div>
+                </center>
+              </div>
+            </td>
+            <td>
+              <div class="card">
+                <center>
+                  <img src="Html/mobo.jpg" alt="">
+                  <div class="card-body">
+                    <input type="checkbox" name="mobo" id="mobo2" value="mobo2">
+                    <label for="mobo2">Motherboard 2 | </label>
+                    <label for="count12">Qty:</label>
+                    <input type="text" name="count" id="count12" value="">
+                  </div>
+                </center>
+              </div>
+            </td>
+            <td>
+              <div class="card">
+                <center>
+                  <img src="Html/mobo.jpg" alt="">
+                  <div class="card-body">
+                    <input type="checkbox" name="mobo" id="mobo3" value="mobo3">
+                    <label for="mobo3">Motherboard 3 | </label>
+                    <label for="count13">Qty:</label>
+                    <input type="text" name="count" id="count13" value="">
+                  </div>
+                </center>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th colspan="3">CPU Fans</th>
+          </tr>
+          <tr>
+            <td>
+              <div class="card">
+                <center>
+                  <img src="Html/fan.jpg" alt="">
+                  <div class="card-body">
+                    <input type="checkbox" name="fan" id="rfan" value="fan1">
+                    <label for="fan1">Fan 1 | </label>
+                    <label for="count14">Qty:</label>
+                    <input type="text" name="count" id="count14" value="">
+                  </div>
+                </center>
+              </div>
+            </td>
+            <td>
+              <div class="card">
+                <center>
+                  <img src="Html/fan.jpg" alt="">
+                  <div class="card-body">
+                    <input type="checkbox" name="fan" id="fan2" value="fan2">
+                    <label for="fan2">Fan 2 | </label>
+                    <label for="count15">Qty:</label>
+                    <input type="text" name="count" id="count15" value="">
+                  </div>
+                </center>
+              </div>
+            </td>
+            <td>
+              <div class="card">
+                <center>
+                  <img src="Html/fan.jpg" alt="">
+                  <div class="card-body">
+                    <input type="checkbox" name="fan" id="fan3" value="fan3">
+                    <label for="fan3">Fan 3 | </label>
+                    <label for="count16">Qty:</label>
+                    <input type="text" name="count" id="count16" value="">
+                  </div>
+                </center>
+              </div>
+            </td>
+          </tr>
+
+
+        </table>
+
+
+      </fieldset>
+    </form>
+  </body>
+</html>
